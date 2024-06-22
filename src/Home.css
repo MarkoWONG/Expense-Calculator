@@ -1,0 +1,97 @@
+.container {  
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  overflow: auto;
+  
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 0.3fr 3.1fr 0.2fr;
+  grid-auto-rows: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "Header"
+    "."
+    "Footer";
+}
+
+.main {  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 0.3fr 1.5fr 1.2fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "Income-Title Cost-Title Profit-Title"
+    "Income-Value Cost-Value Profit-Value"
+    "Income-BreakDown Cost-BreakDown Profit-BreakDown";
+}
+
+.Income-Title { grid-area: Income-Title; }
+
+.Cost-Title { grid-area: Cost-Title; }
+
+.Profit-Title { grid-area: Profit-Title; }
+
+.Income-Value { grid-area: Income-Value; }
+
+.Cost-Value { grid-area: Cost-Value; }
+
+.Profit-Value { grid-area: Profit-Value; }
+
+.Income-BreakDown { grid-area: Income-BreakDown; }
+
+.Cost-BreakDown { grid-area: Cost-BreakDown; }
+
+.Profit-BreakDown {  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 0.4fr 2fr 0.6fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "Needs_title Wants_title Savings_title"
+    "Needs-Value Wants-Value Savings-Value"
+    "Needs-Ratio Wants-Ratio Saving-Ratio";
+  grid-area: Profit-BreakDown;
+}
+
+.Needs_title { grid-area: Needs_title; }
+
+.Wants_title { grid-area: Wants_title; }
+
+.Savings_title { grid-area: Savings_title; }
+
+.Needs-Value { grid-area: Needs-Value; }
+
+.Wants-Value { grid-area: Wants-Value; }
+
+.Savings-Value { grid-area: Savings-Value; }
+
+.Needs-Ratio { grid-area: Needs-Ratio; }
+
+.Wants-Ratio { grid-area: Wants-Ratio; }
+
+.Saving-Ratio { grid-area: Saving-Ratio; }
+
+.Header {  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    ". Title Time";
+  grid-area: Header;
+  border-bottom: 3px solid rgb(135, 135, 135);
+}
+
+.Title { grid-area: Title; }
+
+.Time { grid-area: Time; }
+
+.Footer { grid-area: Footer; 
+  border-top: 3px solid rgb(135, 135, 135);
+  text-align: right;
+  padding-right: 2%;
+}
