@@ -27,23 +27,55 @@
     "Income-Title Cost-Title Profit-Title"
     "Income-Value Cost-Value Profit-Value"
     "Income-BreakDown Cost-BreakDown Profit-BreakDown";
+  text-align: center;
 }
 
-.Income-Title { grid-area: Income-Title; }
+.Income-Title { 
+  grid-area: Income-Title; 
+  background-color: darkturquoise;
+}
 
-.Cost-Title { grid-area: Cost-Title; }
+.Cost-Title { 
+  grid-area: Cost-Title; 
+  background-color: lightcoral;
+}
 
-.Profit-Title { grid-area: Profit-Title; }
+.Profit-Title { 
+  grid-area: Profit-Title; 
+  background-color: aquamarine;
+}
 
-.Income-Value { grid-area: Income-Value; }
+.Income-Value { 
+  grid-area: Income-Value; 
+  background-color: darkturquoise;
+  font-size: 5vw;
+}
 
-.Cost-Value { grid-area: Cost-Value; }
+.Cost-Value { 
+  grid-area: Cost-Value;
+  background-color: lightcoral;
+  font-size: 5vw;
+}
 
-.Profit-Value { grid-area: Profit-Value; }
+.Profit-Value { 
+  grid-area: Profit-Value;
+  background-color: aquamarine;
+  font-size: 5vw;
+   
+}
 
-.Income-BreakDown { grid-area: Income-BreakDown; }
+.Income-BreakDown { 
+  grid-area: Income-BreakDown; 
+  background-color: rgb(2, 251, 255);
+  padding: 3%;
+  
+}
 
-.Cost-BreakDown { grid-area: Cost-BreakDown; }
+.Cost-BreakDown { 
+  grid-area: Cost-BreakDown; 
+  background-color: rgb(245, 149, 149);
+  padding: 3%;
+}
 
 .Profit-BreakDown {  display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -55,6 +87,8 @@
     "Needs-Value Wants-Value Savings-Value"
     "Needs-Ratio Wants-Ratio Saving-Ratio";
   grid-area: Profit-BreakDown;
+  background-color: rgb(162, 246, 218);
+  
 }
 
 .Needs_title { grid-area: Needs_title; }
@@ -63,11 +97,11 @@
 
 .Savings_title { grid-area: Savings_title; }
 
-.Needs-Value { grid-area: Needs-Value; }
+.Needs-Value { grid-area: Needs-Value; font-size: 3vw; }
 
-.Wants-Value { grid-area: Wants-Value; }
+.Wants-Value { grid-area: Wants-Value; font-size: 3vw; }
 
-.Savings-Value { grid-area: Savings-Value; }
+.Savings-Value { grid-area: Savings-Value; font-size: 3vw; }
 
 .Needs-Ratio { grid-area: Needs-Ratio; }
 
@@ -84,14 +118,18 @@
     ". Title Time";
   grid-area: Header;
   border-bottom: 3px solid rgb(135, 135, 135);
+  text-align: center;
 }
 
 .Title { grid-area: Title; }
 
-.Time { grid-area: Time; }
+.Time { 
+  grid-area: Time; 
+}
 
 .Footer { grid-area: Footer; 
   border-top: 3px solid rgb(135, 135, 135);
   text-align: right;
   padding-right: 2%;
+  background-color: rgb(195, 195, 195);
 }
